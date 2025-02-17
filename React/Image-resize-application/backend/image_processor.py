@@ -1,11 +1,9 @@
 from PIL import Image
 import os
 
-# Define the required image sizes
 sizes = [(300, 250), (728, 90), (160, 600), (300, 600)]
 
 def resize_image(image_path, output_folder):
-    """ Resizes the uploaded image into multiple sizes and saves them. """
     image = Image.open(image_path)
     resized_paths = []
     
